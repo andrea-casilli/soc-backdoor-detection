@@ -1,0 +1,2 @@
+python3 backdoor_detector.py --version
+python3 backdoor_detector.py --help
