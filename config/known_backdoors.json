@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Known backdoor hashes database",
+    "last_updated": "2024-01-15",
+    "hash_algorithm": "SHA256"
+  },
+  "backdoors": {
+    "c99shell.php": {
+      "hash": "3b2a5b7b8b9c8d9e0f1a2b3c4d5e6f7g8h9i0j1k",
+      "type": "web_shell",
+      "description": "c99 PHP web shell",
+      "severity": "critical",
+      "references": [
+        "https://www.malwarebytes.com/blog/threats/c99shell",
+        "https://attack.mitre.org/software/S0484/"
+      ]
+    },
+    "r57shell.php": {
+      "hash": "9z8y7x6w5v4u3t2s1r0q9p8o7n6m5l4k3j2i1h0g",
+      "type": "web_shell",
+      "description": "r57 PHP remote shell",
+      "severity": "critical",
+      "references": [
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      ]
+    },
+    "wso.php": {
+      "hash": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t",
+      "type": "web_shell",
+      "description": "Web Shell by Orb (WSO)",
+      "severity": "critical",
+      "references": []
+    },
+    "b374k.php": {
+      "hash": "4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1a2b3c",
+      "type": "web_shell",
+      "description": "b374k PHP shell",
+      "severity": "high",
+      "references": []
+    },
+    "china_chopper.asp": {
+      "hash": "5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1a2b3c4d",
+      "type": "web_shell",
+      "description": "China Chopper ASP webshell",
+      "severity": "critical",
+      "references": [
+        "https://attack.mitre.org/software/S0020/"
+      ]
+    },
+    "weevely.php": {
+      "hash": "6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1a2b3c4d5e",
+      "type": "backdoor",
+      "description": "Weevely PHP backdoor",
+      "severity": "high",
+      "references": []
+    },
+    "nc_backdoor.sh": {
+      "hash": "7g8h9i0j1k2l3m4n5o6p7q8r9s0t1a2b3c4d5e6f",
+      "type": "shell_script",
+      "description": "Netcat-based reverse shell",
+      "severity": "high",
+      "references": []
+    },
+    "reverse_shell.py": {
+      "hash": "8h9i0j1k2l3m4n5o6p7q8r9s0t1a2b3c4d5e6f7g",
+      "type": "python_script",
+      "description": "Python reverse shell",
+      "severity": "high",
+      "references": []
+    },
+    "perl_backdoor.pl": {
+      "hash": "9i0j1k2l3m4n5o6p7q8r9s0t1a2b3c4d5e6f7g8h",
+      "type": "perl_script",
+      "description": "Perl reverse shell",
+      "severity": "high",
+      "references": []
+    },
+    "icmp_backdoor.py": {
+      "hash": "0j1k2l3m4n5o6p7q8r9s0t1a2b3c4d5e6f7g8h9i",
+      "type": "python_script",
+      "description": "ICMP tunneling backdoor",
+      "severity": "medium",
+      "references": []
+    }
+  },
+  "patterns": {
+    "suspicious_strings": [
+      "socket.socket",
+      "subprocess.call",
+      "os.system(",
+      "eval(",
+      "base64_decode",
+      "shell_exec",
+      "system($_GET",
+      "nc -e",
+      "/dev/tcp/",
+      "reverse_shell",
+      "back_connect"
+    ],
+    "suspicious_filenames": [
+      "shell.php",
+      "cmd.php",
+      "backdoor",
+      "webshell",
+      "r57",
+      "c99",
+      "wso"
+    ]
+  }
+}
