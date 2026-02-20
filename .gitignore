@@ -1,93 +1,20 @@
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+*.pyo
+*.pyd
 *.so
 .Python
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/
-pythonenv*
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+dist/
+build/
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-pip-selfcheck.json
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-
-# pyenv
-.python-version
-
-# celery beat schedule
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
+# Reports
+backdoor_report_*.json
+*.log
 
 # IDE
 .vscode/
@@ -96,83 +23,17 @@ dmypy.json
 *.swo
 *~
 .DS_Store
-.project
-.pydevproject
-.settings/
-*.sublime-*
-*.komodoproject
-*.kate-swp
 
-# Project specific
-backdoor_report_*.json
-*.log
-*.pid
-*.lock
-
-# OS generated files
+# OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 *.bak
 *.tmp
-*.temp
 
-# Database files
-*.db
-*.sqlite
-*.sqlite3
-
-# Backup files
-*.backup
-*.bak
-*.old
-
-# Sample files (if you want to exclude compiled binaries)
+# Samples (optional)
 samples/**/*.bin
 samples/**/*.exe
-samples/**/*.out
-samples/**/*.o
 
-# Optional: exclude large files if any
-*.tar
-*.gz
-*.zip
-*.rar
-*.7z
-
-# Logs and databases
-*.log
-*.sql
-*.sqlite
-
-# Private keys and certificates
-*.pem
-*.key
-*.crt
-*.csr
-*.p12
-
-# Keep requirements.txt but ignore local overrides
-requirements-local.txt
-
-# Ignore local config files
-config/local.json
-config/*.local.json
-
-# Ignore test reports
-test-reports/
-reports/
-
-# Ignore output directories
-output/
-out/
-tmp/
-
-# Ignore secret files
-.secrets
-secrets/
-*.secret
+# Local config
+.env
+.local
